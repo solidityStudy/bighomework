@@ -1,0 +1,54 @@
+{
+  "networks": {
+    "sepolia": {
+      "chainSelector": "16015286601757825753",
+      "router": "0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59",
+      "linkToken": "0x779877A7B0D9E8603169DdbD7836e478b4624789",
+      "chainId": 11155111,
+      "name": "Ethereum Sepolia"
+    },
+    "fuji": {
+      "chainSelector": "14767482510784806043",
+      "router": "0xF694E193200268f9a4868e4Aa017A0118C9a8177",
+      "linkToken": "0x0b9d5D9136855f6FEc3c0993feE6E9CE8a297846",
+      "chainId": 43113,
+      "name": "Avalanche Fuji"
+    },
+    "mumbai": {
+      "chainSelector": "12532609583862916517",
+      "router": "0x1035CabC275068e0F4b745A29CEDf38E13aF41b1",
+      "linkToken": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB",
+      "chainId": 80001,
+      "name": "Polygon Mumbai"
+    },
+    "bscTestnet": {
+      "chainSelector": "13264668187771770619",
+      "router": "0x9527E2d01A3064ef6b50c1Da1C0cC523803BCFF2",
+      "linkToken": "0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06",
+      "chainId": 97,
+      "name": "BSC Testnet"
+    }
+  },
+  "supportedRoutes": [
+    {
+      "from": "sepolia",
+      "to": "fuji",
+      "enabled": true
+    },
+    {
+      "from": "fuji",
+      "to": "sepolia",
+      "enabled": true
+    },
+    {
+      "from": "sepolia",
+      "to": "mumbai",
+      "enabled": true
+    },
+    {
+      "from": "mumbai",
+      "to": "sepolia",
+      "enabled": true
+    }
+  ]
+}

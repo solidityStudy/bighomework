@@ -1,0 +1,52 @@
+=== Sepolia 测试网部署记录 ===
+部署日期: 2025-10-02
+网络: Sepolia Testnet
+
+✅ 1. MockPriceFeed ⭐已验证
+   合约地址: 0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3
+   参数: decimals=8, description="ETH/USD", initialPrice=200000000000
+   说明: ETH价格预言机，初始价格 $2000
+   Etherscan: https://sepolia.etherscan.io/address/0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3#code
+   Routescan: https://testnet.routescan.io/address/0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3
+
+✅ 2. MockERC20 ⭐已验证
+   合约地址: 0x63cd19828A547326EF38d6Fdca95d0A1494B0cd4
+   参数: name="TestUSDT", symbol="tUSDT", decimals=6, initialSupply=10000
+   说明: 测试用USDT代币，初始供应10,000个
+   Etherscan: https://sepolia.etherscan.io/address/0x63cd19828A547326EF38d6Fdca95d0A1494B0cd4#code
+   Routescan: https://testnet.routescan.io/address/0x63cd19828A547326EF38d6Fdca95d0A1494B0cd4
+   
+✅ 3. AuctionNFT ⭐已验证
+   合约地址: 0x3d4dF05cD2aF50682fe819Aef81B14CFF2F3dfc7
+   参数: name="TestNFT", symbol="TNFT"
+   说明: 拍卖专用NFT合约
+   Etherscan: https://sepolia.etherscan.io/address/0x3d4dF05cD2aF50682fe819Aef81B14CFF2F3dfc7#code
+   Routescan: https://testnet.routescan.io/address/0x3d4dF05cD2aF50682fe819Aef81B14CFF2F3dfc7
+   
+✅ 4. NFTAuction ⭐已验证
+   合约地址: 0x2c192761D128Ceb6C2d469cfd1846A197a5F2B06
+   参数: _feeRecipient=<你的钱包地址>
+   说明: NFT拍卖核心合约
+   Etherscan: https://sepolia.etherscan.io/address/0x2c192761D128Ceb6C2d469cfd1846A197a5F2B06#code
+   Routescan: https://testnet.routescan.io/address/0x2c192761D128Ceb6C2d469cfd1846A197a5F2B06
+   ✅ 已配置价格预言机:
+      - ETH: 0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3
+      - tUSDT: 0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3
+   
+✅ 5. AuctionFactorySimple ⭐已验证
+   合约地址: 0x5ACcF55A8D2b324f4f388e84069dA7353Fe63CcF
+   参数: _feeRecipient=<你的钱包地址>, _platformFeeRate=250
+   说明: 拍卖工厂合约（精简版，非可升级）
+   Etherscan: https://sepolia.etherscan.io/address/0x5ACcF55A8D2b324f4f388e84069dA7353Fe63CcF#code
+   Routescan: https://testnet.routescan.io/address/0x5ACcF55A8D2b324f4f388e84069dA7353Fe63CcF
+   ✅ 已配置ETH价格预言机: 0x4Ef2efb6567EF780F10e943fd9364d08e4c50BC3
+
+=== 部署进度 ===
+[✅] MockPriceFeed - 已部署 + 已验证
+[✅] MockERC20 - 已部署 + 已验证
+[✅] AuctionNFT - 已部署 + 已验证
+[✅] NFTAuction - 已部署 + 已配置 + 已验证
+[✅] AuctionFactorySimple - 已部署 + 已配置 + 已验证
+
+🎉🎉🎉 所有合约部署完成并验证成功！🎉🎉🎉
+

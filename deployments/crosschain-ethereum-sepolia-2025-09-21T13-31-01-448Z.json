@@ -1,0 +1,17 @@
+{
+  "network": "Ethereum Sepolia",
+  "chainId": 11155111,
+  "chainSelector": "16015286601757825753",
+  "contracts": {
+    "CrossChainNFT": "0xab2c8D1e8108054Fd77d9b020fcA1E9D4a8F69c3"
+  },
+  "ccipConfig": {
+    "router": "0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59",
+    "linkToken": "0x779877A7B0D9E8603169DdbD7836e478b4624789"
+  },
+  "deployer": "0xa7d5f3A4a53bceaF99391615ACb0475f6D17d965",
+  "deployedAt": "2025-09-21T13:31:01.448Z",
+  "gasUsed": {
+    "CrossChainNFT": "估算中..."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "lib": ["es2022"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "./scripts/**/*",
+    "./test/**/*",
+    "./hardhat.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "artifacts",
+    "cache",
+    "contracts",
+    "ignition",
+    "dist",
+    "deployments"
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
